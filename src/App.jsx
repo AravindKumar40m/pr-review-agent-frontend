@@ -15,10 +15,6 @@ export default function App() {
           <h1 className="text-3xl font-bold text-slate-800">
             PR Review Agent — Frontend
           </h1>
-          <p className="text-sm text-slate-600 mt-1">
-            Simple UI to exercise backend endpoints. Make sure your backend is
-            running and CORS allows this origin.
-          </p>
 
           <div className="mt-3 flex gap-2 items-center">
             <label className="text-sm text-slate-700">Backend Base URL</label>
@@ -61,14 +57,6 @@ export default function App() {
             <ReviewAndPostForm apiBase={apiBase} />
           </section>
         </main>
-
-        <footer className="mt-8 text-sm text-slate-500">
-          <p>
-            Note: If your backend uses Gemini/Vertex you may hit rate limits —
-            use mock mode or configure quotas. Also ensure backend CORS is
-            enabled.
-          </p>
-        </footer>
       </div>
     </div>
   );
